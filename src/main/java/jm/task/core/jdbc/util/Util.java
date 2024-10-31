@@ -24,6 +24,9 @@ public class Util {
                 .setProperty("hibernate.connection.username", "root")
                 .setProperty("hibernate.connection.password", "root")
                 .setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
+                .setProperty("show_sql", "true")
+                .setProperty("format_sql", "true")
+                .setProperty("hibernate.hbm2ddl.auto", "none")
                 .buildSessionFactory();
 
         try {
